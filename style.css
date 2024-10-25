@@ -1,0 +1,99 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.header {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.board div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+.leaderboard {
+    margin-top: 20px;
+    color: #fff;
+}
+
+#leaderboard {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    background-color: #000;
+    color: #fff;
+}
+
+#leaderboard th {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+}
+
+#leaderboard td {
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#leaderboard tr:nth-child(even) {
+    background-color: #222;
+}
+
+#leaderboard tr:hover {
+    background-color: #444;
+}
+
+#reset,
+#clearLeaderboard {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+}
+
+#reset:hover,
+#clearLeaderboard:hover {
+    background-color: #ccc;
+}
