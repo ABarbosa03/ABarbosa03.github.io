@@ -10,6 +10,7 @@ body {
 }
 
 .header {
+    font-family: 'Poppins', sans-serif;
     width: 100%;
     background-color: #000;
     color: #fff;
@@ -62,9 +63,11 @@ body {
 }
 
 #leaderboard th {
-    background-color: #fff;
-    color: #000;
+    background-color: #43009d;
+    border: 1px solid #000;
+    color: #fff;
     padding: 10px;
+    text-align: center;
 }
 
 #leaderboard td {
@@ -87,8 +90,8 @@ body {
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
-    background-color: #fff;
-    color: #000;
+    background-color: #43009d;
+    color: #fff;
     border: none;
     border-radius: 5px;
 }
